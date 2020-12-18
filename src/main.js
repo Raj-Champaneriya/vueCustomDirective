@@ -4,7 +4,7 @@ import "./index.css";
 
 const app = createApp(App);
 
-// Register a global custom directive called `v-mainHeader`
+// Register a global custom directive called `v-header`
 app
   .directive("header", {
     beforeMount(el, binding) {
