@@ -1,5 +1,7 @@
 <template>
-  <button type="button"><slot>Submit</slot></button>
+  <div>
+    <button type="button"><slot>Submit</slot></button>
+  </div>
 </template>
 
 <script>

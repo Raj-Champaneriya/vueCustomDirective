@@ -7,13 +7,11 @@
     <span v-format.underline>guide</span>
   </div>
   <!-- <button @click="count++">count is: {{ count }}</button> -->
-  <SubmitButton></SubmitButton>
-  <p>
-    Edit <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+  <SubmitButton>Hello Parent Component</SubmitButton>
 </template>
 
 <script>
+import SubmitButton from "./SubmitButton.vue"
 // Example of local custom directive
 const format = function (el, binding, vnode) {
   const modifiers = binding.modifiers;
@@ -37,6 +35,9 @@ export default {
     return {
       count: 0,
     };
+  },
+  components:{
+    SubmitButton
   },
   directives: {
     format,
