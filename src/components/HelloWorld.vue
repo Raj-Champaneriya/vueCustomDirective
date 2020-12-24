@@ -1,13 +1,13 @@
 <template>
-  <p v-header:normal="{ background: 'pink' }">{{ msg }}</p>
+  <p v-header:bold="{ background: 'pink' }">{{ msg }}</p>
   <p v-header.primary>{{ msg }}</p>
   <div>
     <span v-format.bold.highlight.underline>guide</span>
     <br />
     <span v-format.underline>guide</span>
   </div>
-  <button @click="count++">count is: {{ count }}</button>
-
+  <!-- <button @click="count++">count is: {{ count }}</button> -->
+  <SubmitButton></SubmitButton>
   <p>
     Edit <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>

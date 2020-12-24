@@ -6,11 +6,13 @@
 <script>
 import { onBeforeMount } from "vue";
 import HelloWorld from "./components/HelloWorld.vue";
+import SubmitButton from "./components/SubmitButton.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
+    SubmitButton,
   },
 };
 </script>
